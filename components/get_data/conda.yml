@@ -7,7 +7,7 @@ dependencies:
   - pip=24.3.1
   - requests=2.31.0
   - pip:
-      - pyarrow>=16.0.0 
+      - pyarrow==17.0.0 
       - mlflow==3.3.2
       - wandb==0.21.3
-      - git+https://github.com/udacity/nd0821-c2-build-model-workflow-starter.git#egg=wandb-utils&subdirectory=components
+      - git+https://github.com/MariaVrana/nd0821-c2-build-model-workflow-starter.git#egg=wandb-utils&subdirectory=components
