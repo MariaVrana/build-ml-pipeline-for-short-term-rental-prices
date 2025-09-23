@@ -9,8 +9,9 @@ etl:
   sample: "sample1.csv"
   min_price: 10 # dollars
   max_price: 350 # dollars
-  remove_outliers: true
+  remove_outliers: "false"
   outlier_threshold: 3.0 # Z-score threshold for outlier removal
+  remove_missing: "false" # Whether to remove missing values from the dataset
 data_check:
   kl_threshold: 0.2
 modeling:
@@ -27,6 +28,7 @@ modeling:
   max_tfidf_features: 5
   # NOTE: you can put here any parameter that is accepted by the constructor of
   # RandomForestRegressor. This is a subsample, but more could be added:
+  output_artifact: "random_forest_model"
   random_forest:
     n_estimators: 100
     max_depth: 15
