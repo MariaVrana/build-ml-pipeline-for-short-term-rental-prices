@@ -9,6 +9,8 @@ etl:
   sample: "sample1.csv"
   min_price: 10 # dollars
   max_price: 350 # dollars
+  remove_outliers: true
+  outlier_threshold: 3.0 # Z-score threshold for outlier removal
 data_check:
   kl_threshold: 0.2
 modeling:
