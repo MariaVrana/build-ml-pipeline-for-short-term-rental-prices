@@ -4,10 +4,10 @@ channels:
   - defaults
 dependencies:
   - python=3.13
-  - pip=24.3.1
-  - requests=2.24.0
+  - requests=2.28.0
   - scikit-learn=1.5.2
+  - pip=24.3.1
   - pip:
       - mlflow==3.3.2
       - wandb==0.21.3
-      - git+https://github.com/MariaVrana/nd0821-c2-build-model-workflow-starter.git#egg=wandb-utils&subdirectory=components
+      - git+https://github.com/udacity/nd0821-c2-build-model-workflow-starter.git#egg=wandb-utils&subdirectory=components
